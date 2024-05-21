@@ -35,7 +35,7 @@ def find_min_coins(amount_test, coins=[50, 25, 10, 5, 2, 1]):
 print("Функція жадібного алгоритму\n")
 amount = 113
 used_coins = find_coins_greedy(amount)
-print(f"Використані монети для суми {amount}: {used_coins}")
+print(f"Використані монети для суми {amount} - {used_coins}")
 find_coins_time = timeit.timeit('find_coins_greedy(amount)', globals=globals(), number=10)
 print(f"Час виконання find_coins_greedy{amount} - {find_coins_time} секунд")
 
